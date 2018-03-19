@@ -3,7 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: DevFactory
+title: Factory
+title_prefix: Dev
 subtitle: 忍
 description: 개발공장
 author: YHS
