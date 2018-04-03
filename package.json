@@ -5,6 +5,7 @@
   "scripts": {
     "generate": "hexo g",
     "server": "hexo server",
+    "draft": "hexo server --draft",
     "deploy": "hexo d",
     "publish": "hexo d -g",
     "clean": "hexo clean"
@@ -21,8 +22,8 @@
     "hexo-generator-json-content": "^3.0.1",
     "hexo-generator-tag": "^0.2.0",
     "hexo-renderer-ejs": "^0.3.0",
+    "hexo-renderer-markdown-it": "^3.4.1",
     "hexo-renderer-stylus": "^0.3.1",
-    "hexo-renderer-marked": "^0.3.0",
     "hexo-server": "^0.2.0"
   }
 }
