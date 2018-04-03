@@ -1,7 +1,8 @@
 ---
 title: MariaDB zip 파일 설치 및 실행 (Windows 10 Pro x64)
-date: 2018-04-02 21:58:55 
-categories:
+date: 2018-04-03 23:55:49
+thumbnail: /Blog/images/mariadb_t.jpg
+categories: 
 - DB
 - MariaDB
 tags:
@@ -12,7 +13,7 @@ tags:
 - 설치
 ---
 ---
-##### *설치 경로는 Y:\MariaDB 아래에 한다고 가정함*
+##### *설치 경로는 Y:\MariaDB\10.2.14 아래에 한다고 가정함*
 ---
 
 1. **해당 링크 클릭 [MariaDB Download](https://downloads.mariadb.org/ "MariaDB Download")**
@@ -26,7 +27,7 @@ tags:
 3. **환경변수 설정**
     * 추가
         * 변수 명 : MARIADB_HOME
-        * 변수 값 : `Y:\MariaDB`
+        * 변수 값 : `Y:\MariaDB\10.2.14`
         
     * 편집
         * 변수 명 : Path
@@ -49,10 +50,9 @@ tags:
 6. MariaDB 실행
     - 윈도우 실행 창에서 services.msc 입력
     - 4번에서 --service 옵션 값으로 설정한 서비스 명을 찾아서 서비스 시작
-
-
-
-##### <참고>
+ 
+---
+##### [참고]
 1. **윈도우 서비스 제거**
    - 관리자 권한으로 cmd 창 실행 후 아래 명령어 입력
     ```bat <small>명령어</small>
