@@ -1,7 +1,7 @@
 ---
 title: MariaDB zip 파일 설치 및 실행 (Windows 10 Pro x64)
 date: 2018-04-03 23:55:49
-thumbnail: /Blog/images/mariadb_t.jpg
+thumbnail: /blog/images/mariadb_t.jpg
 categories: 
 - DB
 - MariaDB
