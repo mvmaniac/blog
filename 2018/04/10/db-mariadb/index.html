@@ -3,19 +3,22 @@
 <head>
     <meta charset="utf-8">
     
-    <title>About | DevFactory - 개발공장</title>
+    <title>MariaDB 계정 추가 및 권한설정 | DevFactory - 개발공장</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="개발공장">
-<meta property="og:type" content="website">
-<meta property="og:title" content="About">
-<meta property="og:url" content="https://mvmaniac.github.io/blog/about/index.html">
+    <meta name="description" content="TEST 라는 DB가 만들어져 있다고 가정함    root 계정으로 로그인  관리자 권한으로 cmd 창 실행 아래 명령어 입력 후 비밀번호 입력   명령어1mysql -uroot -p mysql">
+<meta name="keywords" content="DB,MariaDB,계정">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MariaDB 계정 추가 및 권한설정">
+<meta property="og:url" content="https://mvmaniac.github.io/blog/2018/04/10/db-mariadb/index.html">
 <meta property="og:site_name" content="Factory">
-<meta property="og:description" content="개발공장">
+<meta property="og:description" content="TEST 라는 DB가 만들어져 있다고 가정함    root 계정으로 로그인  관리자 권한으로 cmd 창 실행 아래 명령어 입력 후 비밀번호 입력   명령어1mysql -uroot -p mysql">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2018-03-07T13:07:29.142Z">
+<meta property="og:image" content="https://mvmaniac.github.io/Blog/images/mariadb_t.jpg">
+<meta property="og:updated_time" content="2018-04-21T06:28:27.642Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="About">
-<meta name="twitter:description" content="개발공장">
+<meta name="twitter:title" content="MariaDB 계정 추가 및 권한설정">
+<meta name="twitter:description" content="TEST 라는 DB가 만들어져 있다고 가정함    root 계정으로 로그인  관리자 권한으로 cmd 창 실행 아래 명령어 입력 후 비밀번호 입력   명령어1mysql -uroot -p mysql">
+<meta name="twitter:image" content="https://mvmaniac.github.io/Blog/images/mariadb_t.jpg">
     
 
     
@@ -171,7 +174,7 @@
 </aside>
 
             
-            <section id="main"><article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+            <section id="main"><article id="post-db-mariadb" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -179,10 +182,43 @@
                 
     
         <h1 class="article-title" itemprop="name">
-            About
+            MariaDB 계정 추가 및 권한설정
         </h1>
     
 
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>게시일 :
+        <a href="/blog/2018/04/10/db-mariadb/">
+            <time datetime="2018-04-10T09:13:52.000Z" itemprop="datePublished">2018-04-10 18:13:52</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>수정일 :
+        <a href="/blog/2018/04/10/db-mariadb/">
+            <time datetime="2018-04-21T06:28:27.642Z" itemprop="datePublished">2018-04-21 15:28:27</time>
+        </a>
+    </div>
+
+<br/>
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/blog/categories/DB/">DB</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/blog/categories/DB/MariaDB/">MariaDB</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/blog/tags/DB/">DB</a>, <a class="tag-link" href="/blog/tags/MariaDB/">MariaDB</a>, <a class="tag-link" href="/blog/tags/계정/">계정</a>
+    </div>
+
+                    </div>
                 
             </header>
         
@@ -190,7 +226,77 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            
+            <hr>
+<h5><em>TEST 라는 DB가 만들어져 있다고 가정함</em></h5>
+<hr>
+<ol>
+<li>
+<p><strong>root 계정으로 로그인</strong></p>
+<ul>
+<li>관리자 권한으로 cmd 창 실행</li>
+<li>아래 명령어 입력 후 비밀번호 입력</li>
+</ul>
+ <figure class="highlight bat"><figcaption><span><small>명령어</small></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -uroot -p mysql</span><br></pre></td></tr></table></figure>
+ <a id="more"></a>
+</li>
+</ol>
+<ol start="2">
+<li>
+<p><strong>계정 설정</strong></p>
+<ul>
+<li>조회</li>
+</ul>
+ <figure class="highlight sql"><figcaption><span><small>명령어</small></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> HOST, <span class="keyword">USER</span>, <span class="keyword">PASSWORD</span> <span class="keyword">FROM</span> <span class="keyword">USER</span>;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>추가</li>
+</ul>
+ <figure class="highlight sql"><figcaption><span><small>명령어</small></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">USER</span> [계정명]@[IP] <span class="keyword">IDENTIFIED</span> <span class="keyword">BY</span> <span class="string">'[비밀번호]'</span>;</span><br></pre></td></tr></table></figure>
+ <figure class="highlight sql"><figcaption><span><small>예시</small></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- localhost에서만 접근 가능</span></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">USER</span> <span class="keyword">user</span>@localhost <span class="keyword">IDENTIFIED</span> <span class="keyword">BY</span> <span class="string">'1234'</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- '%'로 하면 모든 IP에서 접근 가능</span></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">USER</span> <span class="keyword">user</span>@<span class="string">'%'</span> <span class="keyword">IDENTIFIED</span> <span class="keyword">BY</span> <span class="string">'1234'</span>;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>삭제</li>
+</ul>
+ <figure class="highlight sql"><figcaption><span><small>명령어</small></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">USER</span> [계정명]@[IP];</span><br></pre></td></tr></table></figure>
+ <figure class="highlight sql"><figcaption><span><small>예시</small></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- localhost인 경우</span></span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">USER</span> <span class="keyword">user</span>@localhost</span><br><span class="line"></span><br><span class="line"><span class="comment">-- '%'인 경우</span></span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">USER</span> <span class="keyword">user</span>@<span class="string">'%'</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<ol start="3">
+<li>
+<p><strong>권한 설정</strong></p>
+<ul>
+<li>추가</li>
+</ul>
+ <figure class="highlight sql"><figcaption><span><small>명령어</small></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">GRANT</span> [접근권한] <span class="keyword">ON</span> [데이터베이스명].[테이블명] <span class="keyword">TO</span> [계정명]@[IP];</span><br></pre></td></tr></table></figure>
+ <figure class="highlight sql"><figcaption><span><small>예시</small></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- *.* 로 하면 모든 데이터베이스와 그 데이터베이스의 모든 테이블에 모든 권한 허용 </span></span><br><span class="line"><span class="keyword">GRANT</span> ALL <span class="keyword">PRIVILEGES</span> <span class="keyword">ON</span> *.* <span class="keyword">TO</span> <span class="keyword">user</span>@localhost;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- TEST 데이터베이스의 모든 테이블에 모든 권한 허용</span></span><br><span class="line"><span class="keyword">GRANT</span> ALL <span class="keyword">PRIVILEGES</span> <span class="keyword">ON</span> test.* <span class="keyword">TO</span> <span class="keyword">user</span>@<span class="string">'%'</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- TEST 데이터베이스의 모든 테이블에 SELECT, INSERT, UPDATE, DELETE 권한만 허용</span></span><br><span class="line"><span class="keyword">GRANT</span> <span class="keyword">SELECT</span>, <span class="keyword">INSERT</span>, <span class="keyword">UPDATE</span>, <span class="keyword">DELETE</span> <span class="keyword">ON</span> test.* <span class="keyword">TO</span> <span class="keyword">user</span>@<span class="string">'%'</span>;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>조회</li>
+</ul>
+ <figure class="highlight sql"><figcaption><span><small>명령어</small></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SHOW</span> <span class="keyword">GRANTS</span> <span class="keyword">FOR</span> [계정명]@[IP];</span><br></pre></td></tr></table></figure>
+ <figure class="highlight sql"><figcaption><span><small>예시</small></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- localhost인 경우</span></span><br><span class="line"><span class="keyword">SHOW</span> <span class="keyword">GRANTS</span> <span class="keyword">FOR</span> <span class="keyword">user</span>@localhost;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- '%'인 경우</span></span><br><span class="line"><span class="keyword">SHOW</span> <span class="keyword">GRANTS</span> <span class="keyword">FOR</span> <span class="keyword">user</span>@<span class="string">'%'</span>;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>삭제</li>
+</ul>
+ <figure class="highlight sql"><figcaption><span><small>명령어</small></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">REVOKE</span> [접근권한] <span class="keyword">ON</span> [데이터베이스명].[테이블명] <span class="keyword">FROM</span> [계정명]@[IP];</span><br></pre></td></tr></table></figure>
+ <figure class="highlight sql"><figcaption><span><small>예시</small></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 모든 권한 삭제 </span></span><br><span class="line"><span class="keyword">REVOKE</span> ALL <span class="keyword">ON</span> *.* <span class="keyword">TO</span> <span class="keyword">user</span>@localhost;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- INSERT, UPDATE, DELETE 권한만 삭제</span></span><br><span class="line"><span class="keyword">REVOKE</span> <span class="keyword">INSERT</span>, <span class="keyword">UPDATE</span>, <span class="keyword">DELETE</span> <span class="keyword">ON</span> *.* <span class="keyword">TO</span> <span class="keyword">user</span>@localhost;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<ol start="4">
+<li>
+<p><strong>적용</strong></p>
+<ul>
+<li>아래 명령어 실행</li>
+</ul>
+ <figure class="highlight sql"><figcaption><span><small>명령어</small></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">FLUSH</span> <span class="keyword">PRIVILEGES</span>;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>INSERT, DELETE, UPDATE를 통해 사용자를 추가, 삭제, 권한 변경 등을 수행하였을 때 이 변경 사항을 반영하기 위하여 사용</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h5>[참고]</h5>
+<ol>
+<li><strong>함수를 생성하려면 아래 명령어 실행</strong> <figure class="highlight sql"><figcaption><span><small>명령어</small></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SET</span> <span class="keyword">GLOBAL</span> log_bin_trust_function_creators = <span class="keyword">ON</span>;</span><br></pre></td></tr></table></figure></li>
+</ol>
+
         
         </div>
         <footer class="article-footer">
@@ -200,7 +306,7 @@
 
 </div>
 
-    <a data-url="https://mvmaniac.github.io/blog/about/index.html" data-id="cjg90c7hb000008da4gdga2gg" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="https://mvmaniac.github.io/blog/2018/04/10/db-mariadb/" data-id="cjg90c7hi000308dagje0u4v5" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -268,13 +374,23 @@
 
             
     
-        <a href="https://mvmaniac.github.io/blog/about/index.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://mvmaniac.github.io/blog/about/index.html">댓글</a>
+        <a href="https://mvmaniac.github.io/blog/2018/04/10/db-mariadb/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://mvmaniac.github.io/blog/2018/04/10/db-mariadb/">댓글</a>
     
 
         </footer>
     </div>
     
         
+<nav id="article-nav">
+    
+    
+        <a href="/blog/2018/04/03/db-mariadb/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">이전 글</strong>
+            <div class="article-nav-title">MariaDB zip 파일 설치 및 실행 (Windows 10 Pro x64)</div>
+        </a>
+    
+</nav>
+
 
     
 </article>
@@ -397,9 +513,9 @@
     <script>
     var disqus_config = function () {
         
-            this.page.url = 'https://mvmaniac.github.io/blog/about/index.html';
+            this.page.url = 'https://mvmaniac.github.io/blog/2018/04/10/db-mariadb/';
         
-        this.page.identifier = '';
+        this.page.identifier = 'db-mariadb';
     };
     (function() { 
         var d = document, s = d.createElement('script');  
