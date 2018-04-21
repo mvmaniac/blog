@@ -1,6 +1,6 @@
 # DevFactory 
 
-####개인 정리 공간
+*개인 정리 공간*
 
 1. **[Hexo Theme Icarus](https://github.com/ppoffice/hexo-theme-icarus "Hexo Theme Icarus") 사용 및 수정**
     * template은 [EJS](http://ejs.co/ "EJS") 를 사용함
