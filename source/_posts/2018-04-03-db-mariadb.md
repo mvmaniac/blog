@@ -46,18 +46,21 @@ tags:
 5. **ini 파일 설정**
     * 기본적으로 4번에서 --datadir 옵션 값으로 설정한 경로에 my.ini 파일이 생성되어 있음
     * my-huge.ini, my-large.ini 등등 중 하나를 선택하여 my.ini 파일에 기존 내용은 유지하면서 붙여넣기 하면 됨
+    * [utf8mb4 설정 참고](/blog/2018/05/07/db-mariadb "utf8mb4 설정 참고")
  
-6. MariaDB 실행
+6. **MariaDB 실행**
     * 윈도우 실행 창에서 services.msc 입력
     * 4번에서 --service 옵션 값으로 설정한 서비스 명을 찾아서 서비스 시작
  
+7. **계정 설정**
+    * [계정 설정 참고](/blog/2018/04/10/db-mariadb "계정 설정 참고")
 ---
 ##### [참고]
 1. **윈도우 서비스 제거**
    * 관리자 권한으로 cmd 창 실행 후 아래 명령어 입력
-    ```bat <small>명령어</small>
-    sc delete [윈도우 서비스 명]    
-    ```
-    ```bat <small>예시</small>
-    sc delete "MariaDB 10.2.14"  
-    ```
+        ```bat <small>명령어</small>
+        sc delete [윈도우 서비스 명]    
+        ```
+        ```bat <small>예시</small>
+        sc delete "MariaDB 10.2.14"  
+        ```
