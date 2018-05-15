@@ -3,22 +3,22 @@
 <head>
     <meta charset="utf-8">
     
-    <title>MariaDB zip 파일 설치 및 실행 (Windows 10 Pro x64) | DevFactory - 개발공장</title>
+    <title>MySQL 계정 추가 및 권한설정 | DevFactory - 개발공장</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="설치 경로는 Y:\MariaDB\10.2.14 아래에 한다고 가정함    해당 링크 클릭 MariaDB Download  최신 버전으로 다운로드 버튼 클릭 (현재 10.2.14) PackageType 은 ZIP file 로 받을 것">
-<meta name="keywords" content="DB,MariaDB,zip,포터블,설치">
+    <meta name="description" content="TEST 라는 DB가 만들어져 있다고 가정함    root 계정 비밀번호 설정  cmd 창 실행 후 아래 명령어 입력  명령어1mysql -uroot mysql">
+<meta name="keywords" content="DB,계정,MySQL">
 <meta property="og:type" content="article">
-<meta property="og:title" content="MariaDB zip 파일 설치 및 실행 (Windows 10 Pro x64)">
-<meta property="og:url" content="https://mvmaniac.github.io/blog/2018/04/03/db-mariadb/index.html">
+<meta property="og:title" content="MySQL 계정 추가 및 권한설정">
+<meta property="og:url" content="https://mvmaniac.github.io/blog/2018/05/07/db-mysql-1/index.html">
 <meta property="og:site_name" content="Factory">
-<meta property="og:description" content="설치 경로는 Y:\MariaDB\10.2.14 아래에 한다고 가정함    해당 링크 클릭 MariaDB Download  최신 버전으로 다운로드 버튼 클릭 (현재 10.2.14) PackageType 은 ZIP file 로 받을 것">
+<meta property="og:description" content="TEST 라는 DB가 만들어져 있다고 가정함    root 계정 비밀번호 설정  cmd 창 실행 후 아래 명령어 입력  명령어1mysql -uroot mysql">
 <meta property="og:locale" content="ko">
-<meta property="og:image" content="https://mvmaniac.github.io/blog/images/mariadb_t.jpg">
-<meta property="og:updated_time" content="2018-05-07T11:10:16.851Z">
+<meta property="og:image" content="https://mvmaniac.github.io/blog/images/mysql_t.jpg">
+<meta property="og:updated_time" content="2018-05-15T12:37:53.794Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MariaDB zip 파일 설치 및 실행 (Windows 10 Pro x64)">
-<meta name="twitter:description" content="설치 경로는 Y:\MariaDB\10.2.14 아래에 한다고 가정함    해당 링크 클릭 MariaDB Download  최신 버전으로 다운로드 버튼 클릭 (현재 10.2.14) PackageType 은 ZIP file 로 받을 것">
-<meta name="twitter:image" content="https://mvmaniac.github.io/blog/images/mariadb_t.jpg">
+<meta name="twitter:title" content="MySQL 계정 추가 및 권한설정">
+<meta name="twitter:description" content="TEST 라는 DB가 만들어져 있다고 가정함    root 계정 비밀번호 설정  cmd 창 실행 후 아래 명령어 입력  명령어1mysql -uroot mysql">
+<meta name="twitter:image" content="https://mvmaniac.github.io/blog/images/mysql_t.jpg">
     
 
     
@@ -174,7 +174,7 @@
 </aside>
 
             
-            <section id="main"><article id="post-db-mariadb" class="article article-type-post" itemscope itemprop="blogPost">
+            <section id="main"><article id="post-db-mysql-1" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -182,7 +182,7 @@
                 
     
         <h1 class="article-title" itemprop="name">
-            MariaDB zip 파일 설치 및 실행 (Windows 10 Pro x64)
+            MySQL 계정 추가 및 권한설정
         </h1>
     
 
@@ -191,8 +191,8 @@
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>게시일 :
-        <a href="/blog/2018/04/03/db-mariadb/">
-            <time datetime="2018-04-03T14:55:49.000Z" itemprop="datePublished">2018-04-03 23:55:49</time>
+        <a href="/blog/2018/05/07/db-mysql-1/">
+            <time datetime="2018-05-07T08:32:55.000Z" itemprop="datePublished">2018-05-07 17:32:55</time>
         </a>
     </div>
 
@@ -200,8 +200,8 @@
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>수정일 :
-        <a href="/blog/2018/04/03/db-mariadb/">
-            <time datetime="2018-05-07T11:10:16.851Z" itemprop="datePublished">2018-05-07 20:10:16</time>
+        <a href="/blog/2018/05/07/db-mysql-1/">
+            <time datetime="2018-05-15T12:37:53.794Z" itemprop="datePublished">2018-05-15 21:37:53</time>
         </a>
     </div>
 
@@ -209,13 +209,13 @@
                         
     <div class="article-category">
     	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/blog/categories/DB/">DB</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/blog/categories/DB/MariaDB/">MariaDB</a>
+        <a class="article-category-link" href="/blog/categories/DB/">DB</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/blog/categories/DB/MySQL/">MySQL</a>
     </div>
 
                         
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/blog/tags/DB/">DB</a>, <a class="tag-link" href="/blog/tags/MariaDB/">MariaDB</a>, <a class="tag-link" href="/blog/tags/zip/">zip</a>, <a class="tag-link" href="/blog/tags/설치/">설치</a>, <a class="tag-link" href="/blog/tags/포터블/">포터블</a>
+        <a class="tag-link" href="/blog/tags/DB/">DB</a>, <a class="tag-link" href="/blog/tags/MySQL/">MySQL</a>, <a class="tag-link" href="/blog/tags/계정/">계정</a>
     </div>
 
                     </div>
@@ -226,84 +226,70 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <hr>
-<h5><em>설치 경로는 Y:\MariaDB\10.2.14 아래에 한다고 가정함</em></h5>
+            <h5><em>TEST 라는 DB가 만들어져 있다고 가정함</em></h5>
 <hr>
 <ol>
 <li>
-<p><strong>해당 링크 클릭 <a href="https://downloads.mariadb.org/" title="MariaDB Download" target="_blank" rel="noopener">MariaDB Download</a></strong></p>
+<p><strong>root 계정 비밀번호 설정</strong></p>
 <ul>
-<li>최신 버전으로 다운로드 버튼 클릭 <small>(현재 10.2.14)</small></li>
-<li>PackageType 은 <strong>ZIP file</strong> 로 받을 것</li>
+<li>cmd 창 실행 후 아래 명령어 입력  <figure class="highlight bat"><figcaption><span><small>명령어</small></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -uroot mysql</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
  <a id="more"></a>
-</li>
-<li>
-<p><strong>압축을 풀고자 하는 디렉터리로 이동 후 압축 풀기</strong></p>
-</li>
-<li>
-<p><strong>환경변수 설정</strong></p>
 <ul>
 <li>
-<p>추가</p>
-<ul>
-<li>변수 명 : MARIADB_HOME</li>
-<li>변수 값 : <code>Y:\MariaDB\10.2.14</code></li>
-</ul>
+<p>비밀번호 변경</p>
+  <figure class="highlight sql"><figcaption><span><small>명령어</small></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 5.6 이하</span></span><br><span class="line"><span class="keyword">UPDATE</span> <span class="keyword">USER</span> <span class="keyword">SET</span> <span class="keyword">PASSWORD</span> = <span class="keyword">PASSWORD</span>(<span class="string">'[비밀번호]'</span>) <span class="keyword">WHERE</span> <span class="keyword">USER</span> = <span class="string">'root'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">-- 5.7 이상</span></span><br><span class="line"><span class="keyword">SET</span> <span class="keyword">PASSWORD</span> <span class="keyword">FOR</span> root@localhost = <span class="string">'[비밀번호]'</span>;</span><br></pre></td></tr></table></figure>
+  <figure class="highlight sql"><figcaption><span><small>예시</small></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 5.6 이하</span></span><br><span class="line"><span class="keyword">UPDATE</span> <span class="keyword">USER</span> <span class="keyword">SET</span> <span class="keyword">PASSWORD</span> = <span class="keyword">PASSWORD</span>(<span class="string">'1234'</span>) <span class="keyword">WHERE</span> <span class="keyword">USER</span> = <span class="string">'root'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">-- 5.7 이상</span></span><br><span class="line"><span class="keyword">SET</span> <span class="keyword">PASSWORD</span> <span class="keyword">FOR</span> root@localhost = <span class="string">'1234'</span>;</span><br></pre></td></tr></table></figure>
 </li>
-<li>
-<p>편집</p>
-<ul>
-<li>변수 명 : Path</li>
-<li>변수 값 : <code>%MARIADB_HOME%\bin</code></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>윈도우 서비스 등록 및 DB 데이터 초기화</strong></p>
-<ul>
-<li>
-<p>메모장에 아래 명령어를 넣은 후 확장자를 .bat 으로 한 배치 파일 생성</p>
-  <figure class="highlight bat"><figcaption><span><small>명령어</small></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">%MARIADB_HOME%</span>\bin\mysql_install_db.exe --datadir=[DB 데이터 폴더 경로] --service=[윈도우 서비스 명] --port=[포트번호 (기본은 <span class="number">3306</span>)] --password=[root 계정 비밀번호]</span><br></pre></td></tr></table></figure>
-  <figure class="highlight bat"><figcaption><span><small>예시 (공백이 있는 경우 ""로 묶어줌)</small></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">%MARIADB_HOME%</span>\bin\mysql_install_db.exe --datadir=<span class="variable">%MARIADB_HOME%</span>\data_user --service="MariaDB <span class="number">10</span>.<span class="number">2</span>.<span class="number">14</span>" --port=<span class="number">5306</span> --password=<span class="number">1234</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>생성한 배치 파일을 관리자 권한으로 실행</p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>ini 파일 설정</strong></p>
-<ul>
-<li>기본적으로 4번에서 --datadir 옵션 값으로 설정한 경로에 my.ini 파일이 생성되어 있음</li>
-<li>my-huge.ini, my-large.ini 등등 중 하나를 선택하여 my.ini 파일에 기존 내용은 유지하면서 붙여넣기 하면 됨</li>
-<li><a href="/blog/2018/05/07/db-mariadb" title="utf8mb4 설정 참고">utf8mb4 설정 참고</a></li>
-</ul>
-</li>
-<li>
-<p><strong>MariaDB 실행</strong></p>
-<ul>
-<li>윈도우 실행 창에서 services.msc 입력</li>
-<li>4번에서 --service 옵션 값으로 설정한 서비스 명을 찾아서 서비스 시작</li>
 </ul>
 </li>
 <li>
 <p><strong>계정 설정</strong></p>
 <ul>
-<li><a href="/blog/2018/04/10/db-mariadb" title="계정 설정 참고">계정 설정 참고</a></li>
+<li>
+<p>조회</p>
+  <figure class="highlight sql"><figcaption><span><small>명령어</small></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 5.6 이하</span></span><br><span class="line"><span class="keyword">SELECT</span> HOST, <span class="keyword">USER</span>, <span class="keyword">PASSWORD</span> <span class="keyword">FROM</span> <span class="keyword">USER</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 5.7 이상</span></span><br><span class="line"><span class="keyword">SELECT</span> HOST, <span class="keyword">USER</span>, AUTHENTICATION_STRING <span class="keyword">FROM</span> <span class="keyword">USER</span>;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>추가</p>
+  <figure class="highlight sql"><figcaption><span><small>명령어</small></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">USER</span> [계정명]@[IP] <span class="keyword">IDENTIFIED</span> <span class="keyword">BY</span> <span class="string">'[비밀번호]'</span>;</span><br></pre></td></tr></table></figure>
+  <figure class="highlight sql"><figcaption><span><small>명령어</small></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- localhost에서만 접근 가능</span></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">USER</span> <span class="keyword">user</span>@localhost <span class="keyword">IDENTIFIED</span> <span class="keyword">BY</span> <span class="string">'1234'</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- '%'로 하면 모든 IP에서 접근 가능</span></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">USER</span> <span class="keyword">user</span>@<span class="string">'%'</span> <span class="keyword">IDENTIFIED</span> <span class="keyword">BY</span> <span class="string">'1234'</span>;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>삭제</p>
+  <figure class="highlight sql"><figcaption><span><small>명령어</small></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">USER</span> [계정명]@[IP];</span><br></pre></td></tr></table></figure>
+  <figure class="highlight sql"><figcaption><span><small>명령어</small></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- localhost인 경우</span></span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">USER</span> <span class="keyword">user</span>@localhost</span><br><span class="line"></span><br><span class="line"><span class="comment">-- '%'인 경우</span></span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">USER</span> <span class="keyword">user</span>@<span class="string">'%'</span></span><br></pre></td></tr></table></figure>
+</li>
 </ul>
 </li>
 </ol>
-<hr>
-<h5>[참고]</h5>
-<ol>
-<li><strong>윈도우 서비스 제거</strong>
+<ol start="3">
+<li><strong>권한 설정</strong>
 <ul>
 <li>
-<p>관리자 권한으로 cmd 창 실행 후 아래 명령어 입력</p>
-   <figure class="highlight bat"><figcaption><span><small>명령어</small></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sc delete [윈도우 서비스 명]</span><br></pre></td></tr></table></figure>
-   <figure class="highlight bat"><figcaption><span><small>예시</small></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sc delete "MariaDB <span class="number">10</span>.<span class="number">2</span>.<span class="number">14</span>"</span><br></pre></td></tr></table></figure></li>
+<p>추가</p>
+  <figure class="highlight sql"><figcaption><span><small>명령어</small></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">GRANT</span> [접근권한] <span class="keyword">ON</span> [데이터베이스명].[테이블명] <span class="keyword">TO</span> [계정명]@[IP];</span><br></pre></td></tr></table></figure>
+  <figure class="highlight sql"><figcaption><span><small>명령어</small></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- *.* 로 하면 모든 데이터베이스와 해당 데이터베이스의 모든 테이블에 권한 허용 </span></span><br><span class="line"><span class="keyword">GRANT</span> ALL <span class="keyword">PRIVILEGES</span> <span class="keyword">ON</span> *.* <span class="keyword">TO</span> <span class="keyword">user</span>@localhost;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- TEST 데이터베이스의 모든 테이블에 모든 권한 허용</span></span><br><span class="line"><span class="keyword">GRANT</span> ALL <span class="keyword">PRIVILEGES</span> <span class="keyword">ON</span> test.* <span class="keyword">TO</span> <span class="keyword">user</span>@<span class="string">'%'</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- TEST 데이터베이스의 모든 테이블에 SELECT, INSERT, UPDATE, DELETE 권한만 허용</span></span><br><span class="line"><span class="keyword">GRANT</span> <span class="keyword">SELECT</span>, <span class="keyword">INSERT</span>, <span class="keyword">UPDATE</span>, <span class="keyword">DELETE</span> <span class="keyword">ON</span> test.* <span class="keyword">TO</span> <span class="keyword">user</span>@<span class="string">'%'</span>;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>조회</p>
+  <figure class="highlight sql"><figcaption><span><small>명령어</small></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SHOW</span> <span class="keyword">GRANTS</span> <span class="keyword">FOR</span> [계정명]@[IP];</span><br></pre></td></tr></table></figure>
+  <figure class="highlight sql"><figcaption><span><small>명령어</small></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- localhost인 경우</span></span><br><span class="line"><span class="keyword">SHOW</span> <span class="keyword">GRANTS</span> <span class="keyword">FOR</span> <span class="keyword">user</span>@localhost;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- '%'인 경우</span></span><br><span class="line"><span class="keyword">SHOW</span> <span class="keyword">GRANTS</span> <span class="keyword">FOR</span> <span class="keyword">user</span>@<span class="string">'%'</span>;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>삭제</p>
+  <figure class="highlight sql"><figcaption><span><small>명령어</small></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">REVOKE</span> [접근권한] <span class="keyword">ON</span> [데이터베이스명].[테이블명] <span class="keyword">FROM</span> [계정명]@[IP];</span><br></pre></td></tr></table></figure>
+  <figure class="highlight sql"><figcaption><span><small>명령어</small></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 모든 데이터베이스의 권한 삭제 </span></span><br><span class="line"><span class="keyword">REVOKE</span> ALL <span class="keyword">ON</span> *.* <span class="keyword">TO</span> <span class="keyword">user</span>@localhost;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 모든 데이터 베이스의 INSERT, UPDATE, DELETE 권한만 삭제</span></span><br><span class="line"><span class="keyword">REVOKE</span> <span class="keyword">INSERT</span>, <span class="keyword">UPDATE</span>, <span class="keyword">DELETE</span> <span class="keyword">ON</span> *.* <span class="keyword">TO</span> <span class="keyword">user</span>@localhost;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ol>
+<ol start="4">
+<li><strong>적용</strong>
+<ul>
+<li>아래 명령어 실행  <figure class="highlight sql"><figcaption><span><small>명령어</small></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">FLUSH</span> <span class="keyword">PRIVILEGES</span>;</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
 </li>
 </ol>
@@ -317,7 +303,7 @@
 
 </div>
 
-    <a data-url="https://mvmaniac.github.io/blog/2018/04/03/db-mariadb/" data-id="cjg90vyry000084dae0u2jid3" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="https://mvmaniac.github.io/blog/2018/05/07/db-mysql-1/" data-id="cjh7nz8l200004sdaj3lpevng" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -385,7 +371,7 @@
 
             
     
-        <a href="https://mvmaniac.github.io/blog/2018/04/03/db-mariadb/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://mvmaniac.github.io/blog/2018/04/03/db-mariadb/">댓글</a>
+        <a href="https://mvmaniac.github.io/blog/2018/05/07/db-mysql-1/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://mvmaniac.github.io/blog/2018/05/07/db-mysql-1/">댓글</a>
     
 
         </footer>
@@ -394,15 +380,20 @@
         
 <nav id="article-nav">
     
-        <a href="/blog/2018/04/10/db-mariadb/" id="article-nav-newer" class="article-nav-link-wrap">
+        <a href="/blog/2018/05/07/db-mysql-2/" id="article-nav-newer" class="article-nav-link-wrap">
             <strong class="article-nav-caption">다음 글</strong>
             <div class="article-nav-title">
                 
-                    MariaDB 계정 추가 및 권한설정
+                    MySQL utf8mb4 설정
                 
             </div>
         </a>
     
+    
+        <a href="/blog/2018/05/07/db-mysql/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">이전 글</strong>
+            <div class="article-nav-title">MySQL zip 파일 설치 및 실행 (Windows 10 Pro x64)</div>
+        </a>
     
 </nav>
 
@@ -585,9 +576,9 @@
     <script>
     var disqus_config = function () {
         
-            this.page.url = 'https://mvmaniac.github.io/blog/2018/04/03/db-mariadb/';
+            this.page.url = 'https://mvmaniac.github.io/blog/2018/05/07/db-mysql-1/';
         
-        this.page.identifier = 'db-mariadb';
+        this.page.identifier = 'db-mysql-1';
     };
     (function() { 
         var d = document, s = d.createElement('script');  

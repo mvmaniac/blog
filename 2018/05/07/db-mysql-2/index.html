@@ -3,18 +3,22 @@
 <head>
     <meta charset="utf-8">
     
-    <title>아카이브: 2018 | DevFactory - 개발공장</title>
+    <title>MySQL utf8mb4 설정 | DevFactory - 개발공장</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="개발공장">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Factory">
-<meta property="og:url" content="https://mvmaniac.github.io/blog/archives/2018/index.html">
+    <meta name="description" content="utf8mb4 로 설정하는 이유?  이모티콘을 테이블에 저장하려면 기존의 utf8형식으로는 저장이 안됨 이모티콘은 4바이트인데 mysql 나 mariadb 에서는 utf8이 3바이트로 설계가 되었기 때문, 만약 지원하고 싶다면 utf8mb4로 설정 해야 함">
+<meta name="keywords" content="DB,MySQL,UTF8MB4">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MySQL utf8mb4 설정">
+<meta property="og:url" content="https://mvmaniac.github.io/blog/2018/05/07/db-mysql-2/index.html">
 <meta property="og:site_name" content="Factory">
-<meta property="og:description" content="개발공장">
+<meta property="og:description" content="utf8mb4 로 설정하는 이유?  이모티콘을 테이블에 저장하려면 기존의 utf8형식으로는 저장이 안됨 이모티콘은 4바이트인데 mysql 나 mariadb 에서는 utf8이 3바이트로 설계가 되었기 때문, 만약 지원하고 싶다면 utf8mb4로 설정 해야 함">
 <meta property="og:locale" content="ko">
+<meta property="og:image" content="https://mvmaniac.github.io/blog/images/mysql_t.jpg">
+<meta property="og:updated_time" content="2018-05-07T11:10:16.865Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Factory">
-<meta name="twitter:description" content="개발공장">
+<meta name="twitter:title" content="MySQL utf8mb4 설정">
+<meta name="twitter:description" content="utf8mb4 로 설정하는 이유?  이모티콘을 테이블에 저장하려면 기존의 utf8형식으로는 저장이 안됨 이모티콘은 4바이트인데 mysql 나 mariadb 에서는 utf8이 3바이트로 설계가 되었기 때문, 만약 지원하고 싶다면 utf8mb4로 설정 해야 함">
+<meta name="twitter:image" content="https://mvmaniac.github.io/blog/images/mysql_t.jpg">
     
 
     
@@ -170,25 +174,21 @@
 </aside>
 
             
-            <section id="main"><div class="timeline timeline-wrap">
-    
-            <div class="timeline-row timeline-row-major">
-                <span class="node"><i class="fa fa-calendar"></i></span>
-                <h1 class="title">2018</h1>
-            </div>
+            <section id="main"><article id="post-db-mysql-2" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
         
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
+        
+            <header class="article-header">
                 
     
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/blog/2018/05/07/db-mysql-2/">MySQL utf8mb4 설정</a>
+        <h1 class="article-title" itemprop="name">
+            MySQL utf8mb4 설정
         </h1>
     
 
-                <div class="article-meta">
-                    
+                
+                    <div class="article-meta">
+                        
     <div class="article-date">
         <i class="fa fa-calendar"></i>게시일 :
         <a href="/blog/2018/05/07/db-mysql-2/">
@@ -197,203 +197,178 @@
     </div>
 
 
-                    
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>수정일 :
+        <a href="/blog/2018/05/07/db-mysql-2/">
+            <time datetime="2018-05-07T11:10:16.865Z" itemprop="datePublished">2018-05-07 20:10:16</time>
+        </a>
+    </div>
+
+<br/>
+                        
     <div class="article-category">
     	<i class="fa fa-folder"></i>
         <a class="article-category-link" href="/blog/categories/DB/">DB</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/blog/categories/DB/MySQL/">MySQL</a>
     </div>
 
-                    
+                        
     <div class="article-tag">
         <i class="fa fa-tag"></i>
         <a class="tag-link" href="/blog/tags/DB/">DB</a>, <a class="tag-link" href="/blog/tags/MySQL/">MySQL</a>, <a class="tag-link" href="/blog/tags/UTF8MB4/">UTF8MB4</a>
     </div>
 
-                </div>
-            </div>
-        </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
+                    </div>
                 
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/blog/2018/05/07/db-mysql-1/">MySQL 계정 추가 및 권한설정</a>
-        </h1>
-    
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <ol start="0">
+<li>
+<p><strong>utf8mb4 로 설정하는 이유?</strong></p>
+<ul>
+<li>이모티콘을 테이블에 저장하려면 기존의 utf8형식으로는 저장이 안됨<br>
+이모티콘은 4바이트인데 mysql 나 mariadb 에서는 utf8이 3바이트로 설계가 되었기 때문,<br>
+만약 지원하고 싶다면 utf8mb4로 설정 해야 함</li>
+</ul>
+ <a id="more"></a>
+</li>
+<li>
+<p><strong>my.ini 파일 수정</strong></p>
+<ul>
+<li>만약 ini 파일이 없으면 만들면 됨</li>
+<li>아래 내용을 추가  <figure class="highlight ini"><figcaption><span><small>utf8mb4 설정</small></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[client]</span> </span><br><span class="line"><span class="attr">default-character-set</span>=utf8mb4</span><br><span class="line"></span><br><span class="line"><span class="section">[mysqldump]</span></span><br><span class="line"><span class="attr">default-character-set</span>=utf8mb4</span><br><span class="line"></span><br><span class="line"><span class="section">[mysql]</span></span><br><span class="line"><span class="attr">default-character-set</span>=utf8mb4</span><br><span class="line"></span><br><span class="line"><span class="section">[mysqld]</span></span><br><span class="line"><span class="attr">collation-server</span>=utf8mb4_unicode_ci</span><br><span class="line"><span class="attr">init_connect</span>=<span class="string">"SET NAMES utf8mb4"</span></span><br><span class="line"><span class="attr">character-set-client-handshake</span> = <span class="literal">FALSE</span></span><br><span class="line"><span class="attr">character-set-server</span>=utf8mb4</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ol>
+<ol start="2">
+<li>
+<p><strong>확인</strong></p>
+<ul>
+<li>
+<p>MySQL 설치 후 아래 명령어로 확인 (<a href="/blog/2018/05/07/db-mysql" title="MySQL 설치 방법">MySQL 설치 참고</a>)</p>
+  <figure class="highlight sql"><figcaption><span><small>명령어</small></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> <span class="keyword">variables</span> <span class="keyword">like</span> <span class="string">'c%'</span>;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>아래 처럼 나오면 됨</p>
+</li>
+</ul>
+<p><img src="/blog/images/posts/2018-05-07-db-mysql-2.png" alt="utf8mb 설정" title="utf8mb 설정"></p>
+</li>
+</ol>
 
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>게시일 :
-        <a href="/blog/2018/05/07/db-mysql-1/">
-            <time datetime="2018-05-07T08:32:55.000Z" itemprop="datePublished">2018-05-07 17:32:55</time>
-        </a>
-    </div>
-
-
-                    
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/blog/categories/DB/">DB</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/blog/categories/DB/MySQL/">MySQL</a>
-    </div>
-
-                    
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/blog/tags/DB/">DB</a>, <a class="tag-link" href="/blog/tags/MySQL/">MySQL</a>, <a class="tag-link" href="/blog/tags/계정/">계정</a>
-    </div>
-
-                </div>
-            </div>
+        
         </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
-                
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/blog/2018/05/07/db-mysql/">MySQL zip 파일 설치 및 실행 (Windows 10 Pro x64)</a>
-        </h1>
-    
-
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>게시일 :
-        <a href="/blog/2018/05/07/db-mysql/">
-            <time datetime="2018-05-07T08:10:49.000Z" itemprop="datePublished">2018-05-07 17:10:49</time>
-        </a>
-    </div>
+        <footer class="article-footer">
+            <div class="share-container">
 
 
-                    
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/blog/categories/DB/">DB</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/blog/categories/DB/MySQL/">MySQL</a>
-    </div>
 
-                    
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/blog/tags/DB/">DB</a>, <a class="tag-link" href="/blog/tags/MySQL/">MySQL</a>, <a class="tag-link" href="/blog/tags/zip/">zip</a>, <a class="tag-link" href="/blog/tags/설치/">설치</a>, <a class="tag-link" href="/blog/tags/포터블/">포터블</a>
-    </div>
-
-                </div>
-            </div>
-        </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
-                
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/blog/2018/05/07/db-mariadb/">MariaDB utf8mb4 설정</a>
-        </h1>
-    
-
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>게시일 :
-        <a href="/blog/2018/05/07/db-mariadb/">
-            <time datetime="2018-05-07T04:20:22.000Z" itemprop="datePublished">2018-05-07 13:20:22</time>
-        </a>
-    </div>
-
-
-                    
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/blog/categories/DB/">DB</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/blog/categories/DB/MariaDB/">MariaDB</a>
-    </div>
-
-                    
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/blog/tags/DB/">DB</a>, <a class="tag-link" href="/blog/tags/MariaDB/">MariaDB</a>, <a class="tag-link" href="/blog/tags/UTF8MB4/">UTF8MB4</a>
-    </div>
-
-                </div>
-            </div>
-        </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
-                
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/blog/2018/04/10/db-mariadb/">MariaDB 계정 추가 및 권한설정</a>
-        </h1>
-    
-
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>게시일 :
-        <a href="/blog/2018/04/10/db-mariadb/">
-            <time datetime="2018-04-10T09:13:52.000Z" itemprop="datePublished">2018-04-10 18:13:52</time>
-        </a>
-    </div>
-
-
-                    
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/blog/categories/DB/">DB</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/blog/categories/DB/MariaDB/">MariaDB</a>
-    </div>
-
-                    
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/blog/tags/DB/">DB</a>, <a class="tag-link" href="/blog/tags/MariaDB/">MariaDB</a>, <a class="tag-link" href="/blog/tags/계정/">계정</a>
-    </div>
-
-                </div>
-            </div>
-        </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
-                
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/blog/2018/04/03/db-mariadb/">MariaDB zip 파일 설치 및 실행 (Windows 10 Pro x64)</a>
-        </h1>
-    
-
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>게시일 :
-        <a href="/blog/2018/04/03/db-mariadb/">
-            <time datetime="2018-04-03T14:55:49.000Z" itemprop="datePublished">2018-04-03 23:55:49</time>
-        </a>
-    </div>
-
-
-                    
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/blog/categories/DB/">DB</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/blog/categories/DB/MariaDB/">MariaDB</a>
-    </div>
-
-                    
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/blog/tags/DB/">DB</a>, <a class="tag-link" href="/blog/tags/MariaDB/">MariaDB</a>, <a class="tag-link" href="/blog/tags/zip/">zip</a>, <a class="tag-link" href="/blog/tags/설치/">설치</a>, <a class="tag-link" href="/blog/tags/포터블/">포터블</a>
-    </div>
-
-                </div>
-            </div>
-        </div>
-    
 </div>
+
+    <a data-url="https://mvmaniac.github.io/blog/2018/05/07/db-mysql-2/" data-id="cjh7nz8lb00034sdaqip4p4p4" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="https://mvmaniac.github.io/blog/2018/05/07/db-mysql-2/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://mvmaniac.github.io/blog/2018/05/07/db-mysql-2/">댓글</a>
+    
+
+        </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/blog/2018/05/07/db-mysql-1/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">이전 글</strong>
+            <div class="article-nav-title">MySQL 계정 추가 및 권한설정</div>
+        </a>
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    
+        <section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+    
+
 </section>
             
                 
@@ -559,11 +534,13 @@
     <script>
     var disqus_config = function () {
         
-        this.page.identifier = '';
+            this.page.url = 'https://mvmaniac.github.io/blog/2018/05/07/db-mysql-2/';
+        
+        this.page.identifier = 'db-mysql-2';
     };
     (function() { 
         var d = document, s = d.createElement('script');  
-        s.src = '//' + 'devmaniazs-blog' + '.disqus.com/count.js';
+        s.src = '//' + 'devmaniazs-blog' + '.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();
